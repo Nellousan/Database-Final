@@ -26,7 +26,7 @@ CREATE TABLE User (
 -- O2M Teacher to Class 
 CREATE TABLE Class (
     id int NOT NULL,
-    teacher_id int NOT NULL
+    teacher_id int NOT NULL,
 
     created_by int,
     created_time datetime,
@@ -50,7 +50,7 @@ CREATE TABLE Enrollment (
     student_id int NOT NULL,
     class_id int NOT NULL,
     
-    ycreated_by int,
+    created_by int,
     created_time datetime,
     modified_by int,
     modified_time datetime,
