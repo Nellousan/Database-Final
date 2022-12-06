@@ -1,1 +1,6 @@
 *.sqlite
+
+
+# Added by cargo
+
+/target

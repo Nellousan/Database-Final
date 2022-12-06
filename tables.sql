@@ -26,6 +26,7 @@ CREATE TABLE User (
 -- O2M Teacher to Class 
 CREATE TABLE Class (
     id int NOT NULL,
+    class_name TEXT,
     teacher_id int NOT NULL,
 
     created_by int,
@@ -72,6 +73,7 @@ CREATE TABLE Enrollment (
 -- O2M Class to Sessions
 CREATE TABLE Session (
     id int NOT NULL,
+    session_name TEXT,
     class_id int NOT NULL,
 
     created_by int,

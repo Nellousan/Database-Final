@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pgtables.sql:/docker-entrypoint-initdb.d/10-init.sql
+      - ./inserts.sql:/docker-entrypoint-initdb.d/20-inserts.sql
+    networks:
+      - dbnet
+
+  app:
+    build: .
+    ports:
+      - 8080:8080
+    networks:
+      - dbnet
+    depends_on:
+      - db
+    restart: "no"
+
+networks:
+  dbnet: null
+
+volumes:
+  home: null
+  mongo: null
