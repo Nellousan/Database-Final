@@ -1,6 +1,6 @@
 # Database Final Report
 
-Note: please read this document from the repository to have a pretty markdown: https://github.com/Nellousan/Database-Final/REPORT.md
+Note: please read this document from the repository to have a pretty markdown: https://github.com/Nellousan/Database-Final/blob/main/REPORT.md
 
 ## The idea
 
