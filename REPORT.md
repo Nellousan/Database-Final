@@ -42,6 +42,8 @@ session.
 It is important for this kind of system to keep track of what is going on. For this purpose, our tables have the six following fields: `created_by`, `created_time`,
 `updated_by`, `updated_time`, `deleted_by`, `deleted_time`.
 
+![erd](erd.png)
+
 ## Bonus
 
 As a bonus, I wanted to make use of an actual real database system, instead of only work with sqlite. I could have stuck with the idea of deployign a database and connecting to it via jupyter but i wanted something a little bit more sophisticated than this, and that use more technologies that are actually used in production.\
